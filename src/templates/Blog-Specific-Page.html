@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="../../static/css/base.css" />
+    <link rel="stylesheet" href="../../static/css/Welcome.css" />
+    <link rel="Stylesheet" href="../../static/css/Blog-Specific-Page.css" />
+    <link rel="Stylesheet" href="../../static/css/Book-Detail-Page.css" />
+    <link rel="stylesheet" href="../../static/css/book-list-for-sellers.css" />
+    <link rel="stylesheet" href="../../static/css/Buy-Contents-Main-Page.css" />
+    <link rel="stylesheet" href="../../static/css/Forum-Main-Page.css" />
+    <link rel="stylesheet" href="../../static/css/initiate-payment.css" />
+    <link rel="stylesheet" href="../../static/css/Login.css" />
+    <link rel="stylesheet" href="../../static/css/My-Account.css" />
+    <link rel="Stylesheet" href="../../static/css/My-cart.css" />
+    <link rel="stylesheet" href="../../static/css/My-Order-History.css" />
+    <link rel="stylesheet" href="../../static/css/Sell-Section.css" />
+    <link rel="stylesheet" href="../../static/css/SignUp.css" />
+{% endblock %}
+{% block script %}
+    <script src="../../static/js/Header-Functionality.js"></script>
+    <script src="../../static/js/My-Account-Functionality.js"></script>
+    <script src="../../static/js/My-Cart-Functionality.js"></script>
+{% endblock %}
+{% block main %}
+
+    <div class="header-class">
+        <button id="logo" style="background:None; border:None" onclick="onClickLogo(this)"><img src="../../static/assets/BPlatform.svg" alt="BPlatform" class="logo-class"/></button>
+        <div class="searchbar-class">
+            <img src="../../static/assets/search.png" alt="searchIcon" class="search-icon" style="margin-top: 0.5vh !important"/>
+            <input type="text" placeholder="Search" class="search1-input-class" style="margin-top: 1vh !important" />
+        </div>
+        <div class="Button-class" style="width:10vh;">
+            {% if email %}
+            <button id="my-account-button"  class="icon-button-class" onclick="addEventListener('click', () => {window.location= '/users/buy/my-account';});">
+                <img src="../../static/assets/myaccount.png" alt="my-account" class="icon-class" />
+            </button>
+            <button id="logout-button" class="icon-button-class" onclick="onClickLogOut(this)">
+                <img src="../../static/assets/logout.png" alt="logout" class="icon-class" />
+            </button>
+            {% else %}
+            <button class="button-class-login" onclick="login()">Login</button>
+            {% endif %}
+        </div>
+    </div>
+    <article>
+        <button class="back-button-class" onclick="window.location='/welcome/forum'"><img src="/static/assets/arrow.png" class="arrow-class"></button>
+        <div class="whole-blog">
+            <div class=blog>
+                <div class="post-content">
+                    <h1 class="post-title">{{ post.blog_title }}</h1>
+                    <p style="font-weight: bold;font-size: 14px;line-height: 22px;color: rgba(0, 0, 0, 0.58);text-align: justify;">{{ post.blog_description }}</p>
+                </div>
+                <div class="blog-comment">
+                    {% if comments %}
+                    {% for i in comments %}
+                    <div class="single-comment">
+                        <h4 style="color: #E29578;">{{ i[0] }}:</h4>
+                        <div class="comment">
+                            <h5 style="width: 43vw;text-align: justify;">{{ i[1] }}</h5>
+                            <h6 style="align-self: end;">{{ i[2] }}</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    {% endfor %}
+                    {% else %}
+                    <h4 style="margin:5vh;">No comments yet</h4>
+                    <hr>
+                    {% endif %}
+                    {% if email %}
+                    <form action="/welcome/forum/{{ post.blog_id }}/comment" method="post">
+                    <div class="comment-input">
+                        <img src="../../static/assets/AccountCircle.png" class="account-circle-class-blog"/>
+                        <textarea rows="4" cols="70" placeholder="Views" class="comment-input-class" name="text-area"></textarea>
+                        <button class="Post-comment-class" type="submit">Post</button>
+                    </div>
+                    </form>
+                    {% else %}
+                    <h4><a href="/login">Login</a>to comment</h4>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="post-creation">
+                <h5>Created By: {{ post.blog_author }}</h5>
+                <div class="post-time">
+                    <h5>Created On: {{ post.blog_time }}</h5>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}

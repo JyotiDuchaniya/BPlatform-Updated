@@ -1,0 +1,109 @@
+.logo-class-sell {
+margin-top: 0.5%;
+margin-left:0.7vh;
+}
+
+.whole-box{
+    display:flex ;
+    flex-direction : row ;
+    justify-content: space-evenly;
+}
+
+.book-class{
+    display:flex ;
+    flex-direction : column ;
+    margin-top : 30vh ;
+    margin-left:20vh;
+    position: fixed;
+    left: 0;
+    /*margin-left : 0vh ;*/
+}
+
+.upload-button{
+    margin-top : 8vh ;
+    width: 140px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 2px solid #83C5BE;
+    border-radius: 50px;
+}
+
+.list-class {
+    display : flex ;
+    flex-direction: column;
+    width: 60vw;
+    height: 67vh;
+    background: #FFFFFF;
+    border: 1px dashed #006D77;
+    box-sizing: border-box;
+    /*margin : 25px 30px 25px 30vh;*/
+    margin-top: 5.5rem;
+    margin-left:20vw;
+    position:fixed;
+    padding : 2rem 2rem 2rem 2rem;
+    justify-content : space-between;
+    overflow:auto;
+}
+
+.setting {
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    margin : 26px;
+}
+
+.head-er{
+   font-size : 20px;
+    line-height : 27px;
+    font-weight : bold;
+    color : black;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.Text-class {
+   width: 75vh;
+    height: 3vh;
+    background: rgba(196, 196, 196, 0.25);
+    border-radius: 15px;
+    border : None ;
+    padding: 10px;
+}
+
+.Text-class-textarea
+{
+    background: rgba(196, 196, 196, 0.25);
+    border-radius: 15px;
+    border : None ;
+    padding: 10px;
+    resize: none;
+    margin-left:-8px;
+}
+
+.Text-class-textarea:focus{
+    outline-color: black;
+}
+
+.Text-class:focus{
+    outline-color: black;
+}
+
+.check-class {
+    margin: 20px 20px 0px 590px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.button-class {
+    margin : 20px;
+    background : None;
+    border : None ;
+}
+
+.button-class:hover{
+    cursor : pointer;
+}
+
+
+
