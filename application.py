@@ -38,7 +38,7 @@ def welcome():
 
 @application.route('/login')
 def login():
-    return render_template('login.html')
+    return render_template('Login.html')
 
 
 @application.route('/login', methods=['POST'])
