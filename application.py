@@ -128,7 +128,7 @@ def buy():
 def buy_filter():
     book_type = request.form.getlist('type[]')
     genre = request.form.getlist('genre[]')
-    books1 = Books.add_filter(type, genre)
+    books1 = Books.add_filter(book_type, genre)
     books = Users.get_books()
     email = session['email']
     cartbook1 = []

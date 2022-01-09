@@ -36,3 +36,22 @@
 2021-12-13/21:12:21		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
 2021-12-13/21:21:26		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
 2021-12-13/21:21:26		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
+2022-01-09/13:39:50		New book i.e. The Witcher uploaded by database 
+2022-01-09/13:39:51		New book i.e. The Witcher uploaded by Nina 
+2022-01-09/13:39:52		Book i.e. The Witcher found as per book_id given 
+2022-01-09/13:39:52		Book i.e. That time when i got reincarnated as a slime 2 found as per book_id given 
+2022-01-09/13:39:53		Book i.e. That time when i got reincarnated as a slime found as per book_id given 
+2022-01-09/13:51:03		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
+2022-01-09/13:51:03		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
+2022-01-09/13:51:07		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
+2022-01-09/13:51:08		Book i.e. Hatchet Jobs: Writings on Contemporary Fiction found as per query 
+2022-01-09/13:51:18		Book i.e. The Witcher found as per book_id given 
+2022-01-09/13:51:18		Book i.e. That time when i got reincarnated as a slime 2 found as per book_id given 
+2022-01-09/13:51:19		Book i.e. That time when i got reincarnated as a slime found as per book_id given 
+2022-01-09/13:59:48		The books based on genre as [] and type as ['Old'] loaded.
+2022-01-09/14:00:18		The books based on genre as ['Space Opera'] and type as ['Old'] loaded.
+2022-01-09/14:00:44		Book i.e. The Changeling Sea found as per query 
+2022-01-09/14:00:45		Book i.e. The Changeling Sea found as per query 
+2022-01-09/14:00:45		Book i.e. The Changeling Sea found as per query 
+2022-01-09/14:00:46		Book i.e. The Changeling Sea found as per query 
+2022-01-09/14:00:52		The books matching keyword : test loaded.

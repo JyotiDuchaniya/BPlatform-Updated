@@ -9,6 +9,7 @@ class Database(object):
     cloud_config = {
             'secure_connect_bundle': os.path.join('secure-connect-users.zip')
     }
+    print(os.getcwd())
     auth_provider = PlainTextAuthProvider('eqQKOGgUlnsdyJnZTClqgycP', 'Wnl-iK27pJk6zNwOMoPW3TxpQ+k5UAiizPZaC2pckr_W6ZtSn,-Qpw-evvogYNnTrLEEW1Ak78-tpdO24I+YP35ZQ7.0HwR1eYO-z-kNzm+z.HFCtMHmAOSTD9gQXmCt')
     cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
 

@@ -44,7 +44,7 @@ class Blogs:
 
     @staticmethod
     def one_post(blogid):
-        post = Database.find(collection='forum', query=f"blog_id = \'{blogid}\'")
+        post = Database.find(collection='forum', query=f"blog_id = '{blogid}'")
         App_Logger.log(file_path, "Selected post %s loaded" % post.blog_title)
         return post
 
@@ -56,14 +56,14 @@ class Blogs:
             # print(timestamp)
             commentpost = {t: f'{name}${comment}'}
             Database.update(collection='forum', data=f"blog_comment = blog_comment + {commentpost}",
-                            query=f"blog_id=\'{blogid}\'")
+                            query=f"blog_id='{blogid}'")
             App_Logger.log(file_path, "Comment added by %s at %d" % (name, t))
         except Exception as e:
             App_Logger.log(file_path, "error:: %s" % e)
 
     @staticmethod
     def comments(blogid):
-        blog = Database.find(collection='forum', query=f"blog_id=\'{blogid}\'")
+        blog = Database.find(collection='forum', query=f"blog_id='{blogid}'")
         comments=[]
         if blog.blog_comment is not None:
             for i in sorted(blog.blog_comment):
