@@ -297,3 +297,9 @@
 2022-01-09/14:00:52		All books loaded for user
 2022-01-09/14:00:53		All books loaded for user
 2022-01-09/14:00:53		User found having email address as ab1@mailinator.com
+2022-01-11/19:18:18		User found having email address as ab2@mailinator.com
+2022-01-11/19:18:18		Checking the user's password
+2022-01-11/19:18:18		Successfully logged in via email address ab2@mailinator.com
+2022-01-11/19:18:19		All books loaded for user
+2022-01-11/19:18:19		User found having email address as ab2@mailinator.com
+2022-01-11/19:18:20		All books loaded for user
