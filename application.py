@@ -36,6 +36,8 @@ def welcome():
     email= ''
     if 'email' in session:
         email= session['email']
+    else:
+        session['email']=None
     return render_template('Welcome.html', email=email, title='Welcome')
 
 
