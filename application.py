@@ -26,8 +26,8 @@ application.secret_key = 'let'
 @application.before_first_request
 def database_initialize():
     Database.initialize()
-    # if 'email' not in session:
-    #     session['email']= None
+    if 'email' not in session:
+        session['email']= None
 
 
 @application.route('/')
